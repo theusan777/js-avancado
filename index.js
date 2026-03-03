@@ -1,15 +1,19 @@
-const product = {
-  name: "controle",
-  price: 299.99,
+const user = {
+  id: 1,
+  name: "Matheus",
+  // address: {
+  //   street: "Rua dos Bobos",
+  //   city: "São Paulo",
+  //   geo: {
+  //     lat: -23.55052,
+  //     lng: -46.633308,
+  //   },
+  // },
+  // message: function () {
+  //   console.log(`Olá, ${this.name}!`);
+  // },
 }
 
-console.log(product.price)
-product.price = 249.99
-console.log(product.price)
+console.log(user?.address?.street)
 
-console.log(product.name)
-product.name = "controle ps5"
-console.log(product.name)
-
-product["price"] = 199.99
-console.log(product)
+user?.message?.()
