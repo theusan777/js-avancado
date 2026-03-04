@@ -1,15 +1,14 @@
-const creditCard = "1234 5678 9012 3456"
-console.log(creditCard.length)
+let text = "Study, lern, pratice"
 
-const lastFourDigits = creditCard.slice(-4)
-console.log(lastFourDigits)
+let separate = text.split(", ")
+console.log(separate)
 
-const maskedCreditCard = creditCard.slice(0, -4).replace(/\d/g, "*") + lastFourDigits
-console.log(maskedCreditCard)
+let message = "i am learning JavaScript"
+console.log(message.split("a"));
 
-const maskedNumber = lastFourDigits.padStart(creditCard.length, "*")
-console.log(maskedNumber)
+let joined = separate.join(" - ")
+console.log(joined)
 
-const number = "1234"
-console.log(number.padEnd(8, "$"));
-
+let sentence = "JavaScript is a versatile language"
+let words = sentence.split(" ")
+console.log(words)
