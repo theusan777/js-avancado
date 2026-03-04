@@ -1,14 +1,7 @@
-let text = "Study, lern, pratice"
+let message = "i am studying the fundamentals of javascript"
+console.log(message.indexOf("fundamentals"))
 
-let separate = text.split(", ")
-console.log(separate)
+let message2 = "i am learning javascript"
+console.log(message2.indexOf("python")) 
 
-let message = "i am learning JavaScript"
-console.log(message.split("a"));
-
-let joined = separate.join(" - ")
-console.log(joined)
-
-let sentence = "JavaScript is a versatile language"
-let words = sentence.split(" ")
-console.log(words)
+console.log(message.includes("javascript"));
