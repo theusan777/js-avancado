@@ -1,8 +1,15 @@
-let message = "Estou aprendendo JavaScript!"
-console.log(message.replace("JavaScript", "Node.js"))
+const creditCard = "1234 5678 9012 3456"
+console.log(creditCard.length)
 
-console.log(message.slice(5, 16))
-console.log(message.slice(-12))
+const lastFourDigits = creditCard.slice(-4)
+console.log(lastFourDigits)
 
-let textWithSpaces = "   Olá, Karina!   "
-console.log(textWithSpaces.trim())
+const maskedCreditCard = creditCard.slice(0, -4).replace(/\d/g, "*") + lastFourDigits
+console.log(maskedCreditCard)
+
+const maskedNumber = lastFourDigits.padStart(creditCard.length, "*")
+console.log(maskedNumber)
+
+const number = "1234"
+console.log(number.padEnd(8, "$"));
+
