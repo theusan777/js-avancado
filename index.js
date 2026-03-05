@@ -1,7 +1,9 @@
-let message = "i am studying the fundamentals of javascript"
-console.log(message.indexOf("fundamentals"))
+const newArray = new Array()
+console.log(newArray)
+console.log(newArray.length)
+console.log("Matheus".length)
 
-let message2 = "i am learning javascript"
-console.log(message2.indexOf("python")) 
+const available = new Array(11)
+console.log(available)
+console.log(available.length)
 
-console.log(message.includes("javascript"));
