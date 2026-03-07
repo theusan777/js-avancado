@@ -1,9 +1,13 @@
-const newArray = new Array()
-console.log(newArray)
-console.log(newArray.length)
-console.log("Matheus".length)
+let fruits = ['apple', 'banana', 'cherry']
+console.log(fruits)
+console.log(fruits.length)
 
-const available = new Array(11)
-console.log(available)
-console.log(available.length)
+console.log(fruits[0])
+
+console.log(fruits[7])
+
+console.log(fruits[fruits.length - 1]);
+
+
+
 
