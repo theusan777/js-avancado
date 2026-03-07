@@ -1,10 +1,12 @@
-let fullName = "Matheus Santos Machado"
-console.log(fullName)
+let users = [] 
 
-console.log(fullName.split(" "))
+users.push({name: "Matheus", age: 21})
+users.push({name: "Karina", age: 20})
+users.push({name:  "Lucas", age: 21})
+users.unshift({name: "Maria", age: 22})
 
-console.log(Array.isArray(fullName.split(" ")))
-console.log(Array.from(fullName))
+users.shift()
+users.pop()
 
-
+console.log(users)
 
