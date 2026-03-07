@@ -1,12 +1,10 @@
-let users = [] 
+let fruits = ["apple", "banana", "cherry"]
 
-users.push({name: "Matheus", age: 21})
-users.push({name: "Karina", age: 20})
-users.push({name:  "Lucas", age: 21})
-users.unshift({name: "Maria", age: 22})
+let position = fruits.indexOf("banana")
+console.log(position) 
 
-users.shift()
-users.pop()
+let position2 = fruits.indexOf("grape")
+console.log(position2)
 
-console.log(users)
-
+fruits.splice(1, 2)
+console.log(fruits)
