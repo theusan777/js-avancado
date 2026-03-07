@@ -1,13 +1,10 @@
-let fruits = ['apple', 'banana', 'cherry']
-console.log(fruits)
-console.log(fruits.length)
+let fullName = "Matheus Santos Machado"
+console.log(fullName)
 
-console.log(fruits[0])
+console.log(fullName.split(" "))
 
-console.log(fruits[7])
-
-console.log(fruits[fruits.length - 1]);
-
+console.log(Array.isArray(fullName.split(" ")))
+console.log(Array.from(fullName))
 
 
 
