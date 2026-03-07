@@ -1,10 +1,19 @@
-let fruits = ["apple", "banana", "cherry"]
+let myArray = [
+  "Hello",
+  10,
+  true,
+  function() {    
+    console.log("This is a function inside an array.")
+  },
+  { 
+    name: "ycario", 
+    age: 30 
+  },
+]
 
-let position = fruits.indexOf("banana")
-console.log(position) 
-
-let position2 = fruits.indexOf("grape")
-console.log(position2)
-
-fruits.splice(1, 2)
-console.log(fruits)
+console.log(myArray[0])
+console.log(myArray[1])
+console.log(myArray[2])
+myArray[3]()
+console.log(myArray[4].name)
+console.log(myArray[4].age)
