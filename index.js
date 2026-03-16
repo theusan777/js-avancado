@@ -1,5 +1,11 @@
-let fruits = ['apple', 'banana', 'cherry']
+let execute = true 
 
-console.log(fruits.includes("apple"))
-console.log(fruits.includes("grape"))
+while (execute) {
+    let response = prompt("Deseja continuar? 1 (sim) ou 2 (não)")
+    
+    if (response === "2") {
+      execute = false
+    }
+}
 
+console.log("Programa encerrado.")
