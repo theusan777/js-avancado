@@ -1,42 +1,16 @@
-let date = new Date("2026-03-17T12:00:00")
+const currentLocale = Intl.DateTimeFormat().resolvedOptions()
 
-console.log(date.toLocaleString())
-console.log(date.toLocaleDateString("en"))
+console.log(currentLocale)
 
-console.log(
-  date.toLocaleDateString("pt-BR", {
-    dateStyle: "short"
-  })
-)
+console.log(new Intl.DateTimeFormat("pt-BR").format(new Date()))
+console.log(new Intl.DateTimeFormat("en-US").format(new Date()))
+console.log(new Intl.DateTimeFormat("pt-BR", { dateStyle: "full" }).format(new Date()))
+console.log(new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(new Date()))
 
-console.log(
-  date.toLocaleDateString("pt-BR", {
-    dateStyle: "long"
-  })
-)
+const date = new Date()
 
-console.log(
-  date.toLocaleDateString("pt-BR", {
-    dateStyle: "medium"
-  })
-)
-
-console.log(
-  date.toLocaleDateString("pt-BR", {
-    dateStyle: "full"
-  })
-)
+console.log(date.getTimezoneOffset())
+console.log(date.getTimezoneOffset() / 60)
 
 
-console.log(date.toLocaleDateString("pt-BR", {
-  day: "2-digit",
-  month: "2-digit",
-  year: "2-digit"
-}))
 
-let amount = 14.5
-
-console.log(amount.toLocaleString("pt-BR", {
-  style: "currency",
-  currency: "BRL"
-}))
