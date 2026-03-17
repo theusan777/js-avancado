@@ -1,8 +1,11 @@
-console.log(new Date())
+console.log(new Date(2026, 2, 17))
 
-console.log(new Date(1000))
+console.log(new Date(2026, 2, 17, 10, 21, 0))
 
-console.log(new Date('2024-06-01T12:00:00Z'))
+console.log(new Date("March 17, 2026 10:21:00"))
+console.log(new Date("2026-03-17T10:21:00"))
 
-console.log(new Date('Invalid Date'))
+
+
+
 
