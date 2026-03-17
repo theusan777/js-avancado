@@ -1,9 +1,21 @@
-console.log(new Date(2026, 2, 17))
+let date = new Date("2026-03-17T12:00:00Z")
 
-console.log(new Date(2026, 2, 17, 10, 21, 0))
+console.log(date.getDay())
 
-console.log(new Date("March 17, 2026 10:21:00"))
-console.log(new Date("2026-03-17T10:21:00"))
+console.log(date.getDate())
+
+console.log(date.getMonth() + 1)
+
+console.log(date.getFullYear())
+
+console.log(date.getHours() + 1)
+
+console.log(date.getMinutes())
+
+console.log(date.getSeconds())
+
+console.log(date.getTime())
+
 
 
 
