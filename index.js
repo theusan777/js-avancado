@@ -1,20 +1,19 @@
 let date = new Date("2026-03-17T12:00:00Z")
 
-console.log(date.getDay())
+date.setDate(date.getDate() + 10)
 
-console.log(date.getDate())
+date.setMonth(date.getMonth() + 6)
 
-console.log(date.getMonth() + 1)
+date.setFullYear(date.getFullYear() + 2)
 
-console.log(date.getFullYear())
+date.setHours(date.getHours() + 1)
 
-console.log(date.getHours() + 1)
+date.setMinutes(date.getMinutes() + 30)
 
-console.log(date.getMinutes())
+date.setSeconds(date.getSeconds() + 45)
 
-console.log(date.getSeconds())
 
-console.log(date.getTime())
+console.log(date.toISOString())
 
 
 
