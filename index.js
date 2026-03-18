@@ -1,13 +1,15 @@
-let obj = []
+class MyCustomError {
+  constructor(message) {
+    this.message = "CLASSE DE ERRO PERSONALIZADA: " + message;
+  }
+}
 
 try {
-  if (!obj.includes(17)) {
-    throw new Error('17 is not included in the array')
-  }
+  throw new MyCustomError("Este é um erro personalizado!")
 } catch (error) {
-  if (error instanceof TypeError) {
-    console.error('TypeError:', error.message)
+  if (error instanceof MyCustomError) {
+    console.log(error.message)
+  } else {
+    console.error('Erro inesperado:', error.message)
   }
- console.log(error)
 }
- 
