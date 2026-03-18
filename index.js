@@ -1,16 +1,5 @@
-const currentLocale = Intl.DateTimeFormat().resolvedOptions()
+const dateWithTimezone = new Date("2026-03-01T12:00:00.603+04:00")
 
-console.log(currentLocale)
-
-console.log(new Intl.DateTimeFormat("pt-BR").format(new Date()))
-console.log(new Intl.DateTimeFormat("en-US").format(new Date()))
-console.log(new Intl.DateTimeFormat("pt-BR", { dateStyle: "full" }).format(new Date()))
-console.log(new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(new Date()))
-
-const date = new Date()
-
-console.log(date.getTimezoneOffset())
-console.log(date.getTimezoneOffset() / 60)
-
-
+console.log(new Date().toLocaleDateString())
+console.log(dateWithTimezone.toLocaleDateString())
 
