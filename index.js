@@ -1,7 +1,18 @@
-class User {
-  static showMessage() {
-    console.log("Olá a todos")
+class Animal {
+  constructor(name, species) {
+    this.name = name;
+    this.species = species;
   }
-}  
 
-User.showMessage()
+  makeSound() {
+    console.log("Som genérico do animal")
+    
+  }
+}
+
+class Dog extends Animal{
+
+}
+
+const dog = new Dog("Rex", "Canis lupus")
+dog.makeSound()
