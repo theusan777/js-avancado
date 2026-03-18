@@ -1,30 +1,13 @@
-class Animal {
-  constructor(name, species) {
-    this.name = name;
-    this.species = species;
-  }
+let obj = []
 
-  makeSound() {
-    console.log("Som genérico do animal")
-    
+try {
+  if (!obj.includes(17)) {
+    throw new Error('17 is not included in the array')
   }
+} catch (error) {
+  if (error instanceof TypeError) {
+    console.error('TypeError:', error.message)
+  }
+ console.log(error)
 }
-
-class Dog extends Animal{
-  makeSound() {
-    console.log("Woof! Woof!")
-  }
-}
-
-const dog = new Dog("Rex", "Canis lupus")
-dog.makeSound()
-
-
-class Cat extends Animal{
-  makeSound() {
-    console.log("Meow! Meow!")
-  }
-}
-
-const cat = new Cat("Whiskers", "Felis catus")
-cat.makeSound()
+ 
