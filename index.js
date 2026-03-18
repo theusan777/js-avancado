@@ -1,10 +1,14 @@
-class Person {
-  constructor(name, age) {
+class User {
+  constructor(name, email) {
     this.name = name;
-    this.age = age;
+    this.email = email;
+  }
+
+  
+  sendEmail(){
+  console.log("E-mail enviado para", this.name, "para o endereço", this.email)
   }
 }
 
-const person1 = new Person("Alice", 30)
-console.log(person1.name)
-console.log(person1.age)
+const user1 = new User("Alice", "alice@example.com")
+user1.sendEmail()
